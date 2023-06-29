@@ -18,7 +18,7 @@ vertical-align: baseline;
 display: block;
 }footer {
 width:100%;
-background-color:#000000;
+background-color:#2C2834;
 min-height: calc( 40px + 6vw );
 }
 body {
@@ -32,10 +32,7 @@ box-sizing: border-box;
 }*, *:before, *:after {
 box-sizing: inherit;
 }body {
-background-image: url("images/overlay.png"), url("images/bg.jpg");
-background-repeat: repeat, no-repeat;
-background-size: auto, 100% 100%;
-background-attachment: fixed;
+background-color:#2C2834;
 overflow-y: scroll;
 }body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 -moz-animation: none !important;
