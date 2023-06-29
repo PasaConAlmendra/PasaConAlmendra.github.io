@@ -9,11 +9,30 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <title>Jane Doe</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+<script>
+<!--
+var mensagem="";
+
+function clickIE() {if (document.all) {(mensagem);return false;}}
+
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(mensagem);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+// -->    
+</script>
+
+
+
 <link rel="stylesheet" href="assets/css/main.css" />
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href="assets/css/font-awesome.min.css">
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body class="is-preload">
+<body onselectstart="return false" ondragstart="return false" class="is-preload">
 
 <!-- Nav -->
 <nav id="nav">
@@ -31,7 +50,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <article id="home" class="panel intro">
 <a class="jumplink pic">
 
-<img src="images/lilith-saga-escort-01.webp" alt="" />
+<img src="images/lilith-saga-escort-01.webp" />
 
 <!--
 <img src="images/004.jpg" alt="" />
@@ -70,32 +89,28 @@ luctus elit eget interdum.
 <span style="margin-left: 10px;"><i class="fa fa-check">
 </i> Block 1</span>
 </div>
-<div class="colored-block" style="background-color: #FFFFFF;">
-<span > Block 1</span>
-</div>
+
 
 </header>
 </article>
 
 <!-- Work -->
-<article id="work" class="panel">
-<!--
-<img src="images/001.jpg" alt="" width="100%">
-<img src="images/002.jpg" alt="" width="100%">
-<img src="images/003.jpg" alt="" width="100%">
-<img src="images/004.jpg" alt="" width="100%">
--->
-         
-<img src="images/lilith-saga-escort-02.webp" alt="" width="100%">
-<img src="images/lilith-saga-escort-03.webp" alt="" width="100%">
-<img src="images/lilith-saga-escort-04.webp" alt="" width="100%">
-<img src="images/lilith-saga-escort-05.webp" alt="" width="100%">
-<img src="images/lilith-saga-escort-06.webp" alt="" width="100%">
-<img src="images/lilith-saga-escort-07.webp" alt="" width="100%">
-<img src="images/lilith-saga-escort-08.webp" alt="" width="100%">
+<article id="work" class="panel" style="background:#000000;">
+
+<div class="image-container">
+<img src="images/lilith-saga-escort-05.webp" class="img-fluid-por">
+<img src="images/lilith-saga-escort-02.webp" class="img-fluid-por">
+<img src="images/lilith-saga-escort-03.webp" class="img-fluid">
+<img src="images/lilith-saga-escort-04.webp" class="img-fluid-por">
+<img src="images/lilith-saga-escort-01.webp" class="img-fluid-por">
+<img src="images/lilith-saga-escort-06.webp" class="img-fluid">
+<img src="images/lilith-saga-escort-07.webp" class="img-fluid">
+<img src="images/lilith-saga-escort-08.webp" class="img-fluid">
+</div>
+
+<footer></footer>
 
 </article>
-
 <!-- Contact -->
 <article id="contact" class="panel">
 <h2>Sobre mi</h2>
